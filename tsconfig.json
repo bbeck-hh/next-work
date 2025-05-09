@@ -13,13 +13,18 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    // Stammverzeichnis
+    "baseUrl": ".", 
     "plugins": [
       {
         "name": "next"
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      // bildet @/ auf das Projektstammverzeichnis ab
+      "@/*": ["./*"],
+      "@components/*": ["./components/*"],
+      "@layout/*": ["./components/layout/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
