@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import type { Metadata } from "next";
 import { Header } from "./components/layout/Header";
+import { Footer } from "./components/layout/Footer";
 import '@/app/globals.css';
 
 export const metadata: Metadata = {
@@ -18,9 +19,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
      </head>
      <body>
        <Header />
-       {/* <Navigation /> */}
        <main>{children}</main>
-       {/* <Footer /> */}
+       <Footer />
      </body>
    </html>
  );
