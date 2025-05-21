@@ -20,10 +20,10 @@ export default function NavigationListItem({
 
 const NavLink = styled(Link)`
   text-decoration: none;
-  color: var(--textColor);
   font-size: 1rem;
   padding: 0.5rem 1rem;
   transition: color 0.3s ease;
+  font-weight: 600;
 
   &:hover {
     text-decoration: underline;
