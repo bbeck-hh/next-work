@@ -11,7 +11,7 @@
     @apply bg-primary text-[#910700];
   };
   header, footer {
-    @apply bg-[#7aac5d]  text-[#240707];
+    @apply bg-[#7aac5d]  text-secondary;
   }
 }
 
