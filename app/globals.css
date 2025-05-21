@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* General styles tailwind */
+@layer base {
+  html {
+    @apply font-montserrat ;
+  }
+  main {
+    @apply bg-primary text-[#910700];
+  };
+  header, footer {
+    @apply bg-[#7aac5d]  text-[#240707];
+  }
+}
+
 
 /* reset */
 *,
@@ -29,14 +42,34 @@
 
 
   /* generals */ 
-  --bgBody: var(--bg);
+  /* --bgBody: var(--bg);
   --bgHeader: var(--primary);
-  --headerColor: var(--primary);
+  --headerColor: var(--primary); */
 
   /* distances */
   --dist-500: .5rem;
 
 }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
 
 /* todo change the properties */
 @media (prefers-color-scheme: dark) {
@@ -46,14 +79,8 @@
   }
 }
 
-body {
-  background: var(--bg);
-  color: var(--black-700);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 header, footer {
-  background-color: var(--bgHeader);
+  /* background-color: var(--bgHeader); */
   padding: 1rem;
 } 
 
