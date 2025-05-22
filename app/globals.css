@@ -39,12 +39,8 @@
   --surface: #f3e7ce;
   --surface-200: #fbf7ef;
   --disabled: #908f83;
+  --blue-600: #1d50c0;
 
-
-  /* generals */ 
-  /* --bgBody: var(--bg);
-  --bgHeader: var(--primary);
-  --headerColor: var(--primary); */
 
   /* distances */
   --dist-500: .5rem;
