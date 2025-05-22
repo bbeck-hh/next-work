@@ -8,8 +8,9 @@
     @apply font-montserrat ;
   }
   main {
-    @apply bg-primary text-[#910700];
-  };
+    background-color: #ededed;
+    color: #910700;
+  }
   header, footer {
     @apply bg-[#7aac5d]  text-secondary;
   }
@@ -76,7 +77,6 @@
 }
 
 header, footer {
-  /* background-color: var(--bgHeader); */
   padding: 1rem;
 } 
 
