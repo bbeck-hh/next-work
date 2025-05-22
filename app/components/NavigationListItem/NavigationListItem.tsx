@@ -5,15 +5,17 @@ import styled from 'styled-components';
 interface NavigationListItemProps {
   href: string;
   label: string;
+  className?: string;
 }
 
 export default function NavigationListItem({
   href,
   label,
+  className,
 }: NavigationListItemProps) {
   return (
     <li>
-      <NavLink href={href}>{label}</NavLink>
+      <NavLink href={href} className={className}>{label}</NavLink>
     </li>
   );
 }
